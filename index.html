@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="no-js" lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lumira Solutions — Soluciones digitales para tu empresa</title>
 <meta name="description" content="Lumira Solutions crea soluciones digitales para empresas: desarrollo web, sistemas personalizados, aplicaciones web y automatización de procesos.">
+<link rel="canonical" href="https://lumirasolutions.com.mx/">
 
-<link rel="icon" type="image/png" href="assets/logo/lumira-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Lumira Solutions">
+<meta property="og:title" content="Lumira Solutions — Soluciones digitales para tu empresa">
+<meta property="og:description" content="Desarrollamos soluciones digitales, sistemas personalizados y automatizaciones para ayudar a tu empresa a crecer.">
+<meta property="og:url" content="https://lumirasolutions.com.mx/">
+<meta property="og:image" content="https://lumirasolutions.com.mx/assets/logo/lumira-logo.webp">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lumira Solutions — Soluciones digitales para tu empresa">
+<meta name="twitter:description" content="Desarrollamos soluciones digitales, sistemas personalizados y automatizaciones para ayudar a tu empresa a crecer.">
+<meta name="twitter:image" content="https://lumirasolutions.com.mx/assets/logo/lumira-logo.webp">
+
+<script>
+  document.documentElement.classList.replace('no-js', 'js');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Lumira Solutions",
+  "url": "https://lumirasolutions.com.mx/",
+  "logo": "https://lumirasolutions.com.mx/assets/logo/lumira-logo.webp",
+  "description": "Soluciones digitales, sistemas personalizados y automatización de procesos para empresas.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "lumirasolution@gmail.com",
+    "availableLanguage": "Spanish"
+  }
+}
+</script>
+
+<link rel="icon" type="image/x-icon" href="assets/logo/lumira-icon.ico">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +50,8 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <!-- Fixed soft scrim behind the navbar — keeps the floating transparent
      navbar legible over both dark and light sections without ever
@@ -25,7 +62,7 @@
 <header class="navbar" id="navbar">
   <div class="navbar__inner">
     <a href="#inicio" class="navbar__brand">
-      <img src="assets/logo/lumira-logo.png" alt="Lumira Solutions" class="navbar__logo">
+      <img src="assets/logo/lumira-logo.webp" alt="Lumira Solutions" class="navbar__logo">
     </a>
 
     <nav class="navbar__links" id="navLinks">
@@ -53,6 +90,8 @@
   </div>
 </header>
 
+<main id="contenido" tabindex="-1">
+
 <!-- ============ HERO ============ -->
 <section class="hero" id="inicio">
   <div class="hero__media">
@@ -63,7 +102,7 @@
       muted
       playsinline
       preload="auto"
-      poster="assets/logo/lumira-icon.png"
+      poster="assets/logo/lumira-icon.ico"
     >
       <source src="assets/video/hero-video-mobile.mp4" type="video/mp4" media="(max-width: 768px)">
       <source src="assets/video/hero-video.mp4" type="video/mp4">
@@ -75,7 +114,7 @@
       <span class="pulse-ring pulse-ring--delay"></span>
       <span class="pulse-core"></span>
     </div>
-    <img src="assets/logo/lumira-icon.png" class="hero__watermark" alt="" aria-hidden="true">
+    <img src="assets/logo/lumira-icon.ico" class="hero__watermark" alt="" aria-hidden="true">
   </div>
 
   <div class="hero__content" id="heroContent">
@@ -368,10 +407,10 @@
     <div class="work-grid" data-scroll-reveal>
 
       <article class="work-card">
-        <div class="work-card__mock work-card__mock--photo" aria-hidden="true">
-          <div class="work-card__mock-bar"><span></span><span></span><span></span></div>
+        <div class="work-card__mock work-card__mock--photo">
+          <div class="work-card__mock-bar" aria-hidden="true"><span></span><span></span><span></span></div>
           <div class="work-card__mock-body">
-            <img class="work-card__shot" src="assets/portfolio/sports.png" alt="" loading="lazy">
+            <img class="work-card__shot" src="assets/portfolio/sports.webp" alt="Ilustración de una plataforma para gestionar ligas deportivas, equipos, calendarios y resultados." loading="lazy">
           </div>
         </div>
         <div class="work-card__info">
@@ -381,10 +420,10 @@
       </article>
 
       <article class="work-card">
-        <div class="work-card__mock work-card__mock--photo" aria-hidden="true">
-          <div class="work-card__mock-bar"><span></span><span></span><span></span></div>
+        <div class="work-card__mock work-card__mock--photo">
+          <div class="work-card__mock-bar" aria-hidden="true"><span></span><span></span><span></span></div>
           <div class="work-card__mock-body">
-            <img class="work-card__shot" src="assets/portfolio/ecommerce.png" alt="" loading="lazy">
+            <img class="work-card__shot" src="assets/portfolio/ecommerce.webp" alt="Ilustración del flujo de una tienda en línea, desde el producto y carrito hasta el pago y la entrega." loading="lazy">
           </div>
         </div>
         <div class="work-card__info">
@@ -394,10 +433,10 @@
       </article>
 
       <article class="work-card">
-        <div class="work-card__mock work-card__mock--photo" aria-hidden="true">
-          <div class="work-card__mock-bar"><span></span><span></span><span></span></div>
+        <div class="work-card__mock work-card__mock--photo">
+          <div class="work-card__mock-bar" aria-hidden="true"><span></span><span></span><span></span></div>
           <div class="work-card__mock-body">
-            <img class="work-card__shot" src="assets/portfolio/hr.png" alt="" loading="lazy">
+            <img class="work-card__shot" src="assets/portfolio/hr.webp" alt="Ilustración de un sistema de recursos humanos para gestionar empleados, permisos, documentos y procesos." loading="lazy">
           </div>
         </div>
         <div class="work-card__info">
@@ -407,10 +446,10 @@
       </article>
 
       <article class="work-card">
-        <div class="work-card__mock work-card__mock--photo" aria-hidden="true">
-          <div class="work-card__mock-bar"><span></span><span></span><span></span></div>
+        <div class="work-card__mock work-card__mock--photo">
+          <div class="work-card__mock-bar" aria-hidden="true"><span></span><span></span><span></span></div>
           <div class="work-card__mock-body">
-            <img class="work-card__shot" src="assets/portfolio/billing.png" alt="" loading="lazy">
+            <img class="work-card__shot" src="assets/portfolio/billing.webp" alt="Ilustración de un sistema de facturación con generación de facturas, pagos y reportes." loading="lazy">
           </div>
         </div>
         <div class="work-card__info">
@@ -420,10 +459,10 @@
       </article>
 
       <article class="work-card">
-        <div class="work-card__mock work-card__mock--photo" aria-hidden="true">
-          <div class="work-card__mock-bar"><span></span><span></span><span></span></div>
+        <div class="work-card__mock work-card__mock--photo">
+          <div class="work-card__mock-bar" aria-hidden="true"><span></span><span></span><span></span></div>
           <div class="work-card__mock-body">
-            <img class="work-card__shot" src="assets/portfolio/chatbots.png" alt="" loading="lazy">
+            <img class="work-card__shot" src="assets/portfolio/chatbots.webp" alt="Ilustración de un chatbot con asistente inteligente para atención a clientes." loading="lazy">
           </div>
         </div>
         <div class="work-card__info">
@@ -436,10 +475,10 @@
            assets/portfolio/reymont.jpg (recomendado 1200x750, relación 16:10)
            si prefieres reemplazar esta ilustración por la captura real del sitio -->
       <article class="work-card">
-        <div class="work-card__mock work-card__mock--photo" aria-hidden="true">
-          <div class="work-card__mock-bar"><span></span><span></span><span></span></div>
+        <div class="work-card__mock work-card__mock--photo">
+          <div class="work-card__mock-bar" aria-hidden="true"><span></span><span></span><span></span></div>
           <div class="work-card__mock-body">
-            <img class="work-card__shot" src="assets/portfolio/corporate.png" alt="" loading="lazy">
+            <img class="work-card__shot" src="assets/portfolio/corporate.webp" alt="Ilustración de un sitio web corporativo con secciones de inicio, servicios, proyectos y contacto." loading="lazy">
           </div>
         </div>
         <div class="work-card__info">
@@ -527,7 +566,7 @@
 
     <div class="about__card" data-scroll-reveal>
       <div class="about__card-head">
-        <img src="assets/logo/lumira-icon.png" alt="" class="about__card-icon">
+        <img src="assets/logo/lumira-icon.ico" alt="" class="about__card-icon">
         <div>
           <strong>Lumira Solutions</strong>
           <span>Soluciones digitales a medida</span>
@@ -541,6 +580,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- ============ CTA FINAL + CONTACTO + FOOTER ============ -->
 <footer class="section section--dark footer-block" id="contacto">
@@ -562,7 +603,7 @@
 
   <div class="container footer">
     <div class="footer__brand">
-      <img src="assets/logo/lumira-logo.png" alt="Lumira Solutions" class="footer__logo">
+      <img src="assets/logo/lumira-logo.webp" alt="Lumira Solutions" class="footer__logo">
       <p>"Porque el mundo es digital.<br>Tu empresa también."</p>
     </div>
 
@@ -578,7 +619,6 @@
       <span class="footer__col-title">Contacto</span>
       <a href="https://wa.me/523339450884" target="_blank" rel="noopener">WhatsApp</a>
       <a href="mailto:lumirasolution@gmail.com">lumirasolution@gmail.com</a>
-      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
     
     </div>
   </div>

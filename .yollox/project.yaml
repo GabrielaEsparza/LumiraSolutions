@@ -1,0 +1,64 @@
+schema_version: 1
+project:
+  name: Lumira Solutions
+  identity: Spanish-language static marketing site for a digital-solutions company.
+  repository_shape: single-page static site
+languages:
+  - name: HTML
+    role: page structure
+    evidence: index.html
+  - name: CSS
+    role: presentation and responsive layout
+    evidence: css/style.css
+  - name: JavaScript
+    role: browser interactions and progressive enhancement
+    evidence: js/main.js
+runtime:
+  name: Browser
+  version: UNKNOWN
+stack:
+  - Native HTML, CSS, and browser JavaScript compose the landing page.
+  - Local logo, portfolio image, and hero video assets are referenced from assets/.
+  - GitHub Pages deployment is configured through GitHub Actions.
+modules:
+  - name: landing page
+    path: index.html
+    role: single-page marketing content and section composition
+  - name: presentation
+    path: css/style.css
+    role: design tokens, layout, responsive behavior, and motion styles
+  - name: client interactions
+    path: js/main.js
+    role: navigation, hero fallback, scroll reveal, and service-card toggles
+  - name: static assets
+    path: assets
+    role: logos, portfolio imagery, and hero video media
+  - name: deployment
+    path: .github/workflows/static.yml
+    role: GitHub Pages publication workflow
+freshness:
+  evidence_sources:
+    project:
+      - index.html
+      - CNAME
+      - .github/workflows/static.yml
+    architecture:
+      - index.html
+      - js/main.js
+      - .github/workflows/static.yml
+      - CNAME
+    conventions:
+      - index.html
+      - css/style.css
+      - js/main.js
+    validation:
+      - .github/workflows/static.yml
+  topology_watch:
+    - path: .github/workflows
+      reason: deployment workflow additions, removals, or moves
+    - path: assets
+      reason: static asset additions, removals, or moves
+    - path: css
+      reason: stylesheet additions, removals, or moves
+    - path: js
+      reason: client-script additions, removals, or moves

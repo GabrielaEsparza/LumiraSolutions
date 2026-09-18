@@ -16,16 +16,27 @@
   const mobileMenu = document.getElementById('mobileMenu');
 
   if (navToggle && mobileMenu) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('is-open');
+    const setMenuOpen = (isOpen, returnFocus = false) => {
+      mobileMenu.classList.toggle('is-open', isOpen);
       navToggle.setAttribute('aria-expanded', String(isOpen));
+      navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+      if (!isOpen && returnFocus) navToggle.focus();
+    };
+
+    navToggle.addEventListener('click', () => {
+      setMenuOpen(!mobileMenu.classList.contains('is-open'));
     });
 
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        mobileMenu.classList.remove('is-open');
-        navToggle.setAttribute('aria-expanded', 'false');
+        setMenuOpen(false);
       });
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+        setMenuOpen(false, true);
+      }
     });
   }
 

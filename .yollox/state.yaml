@@ -1,0 +1,10 @@
+schema_version: 1
+context_revision: 1
+generated_at: "2026-09-18T15:36:32Z"
+baseline_commit: 7d4fb249bfa37f3eb0747eee805e3b7e4c0bcae7
+branch: development
+reproducible: true
+freshness:
+  strategy: git-path-diff
+  comparison_base: 7d4fb249bfa37f3eb0747eee805e3b7e4c0bcae7
+  relevant_change_means: possibly_stale
